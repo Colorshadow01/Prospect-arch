@@ -1,0 +1,246 @@
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+a
+{
+   color: #000000;
+   text-decoration: none;
+}
+a:hover
+{
+   color: #808080;
+   text-decoration: none;
+}
+#PhotoGallery1
+{
+   box-sizing: border-box;
+   font-size: 0;
+   width: 100%;
+   height: 100%;
+   display: block;
+   margin: 0;
+}
+#PhotoGallery1 .thumbnails
+{
+   margin: 0;
+   display: grid;
+   grid-template-columns: repeat(4, minmax(0, 1fr));
+   font-size: 0;
+}
+#PhotoGallery1 .thumbnail
+{
+   position: relative;
+   min-height: 1px;
+   box-sizing: border-box;
+   float: none;
+   width: auto;
+   padding: 15px 15px 15px 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#PhotoGallery1 .thumbnail img
+{
+   border: 0px solid #000000;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 100%;
+   box-sizing: border-box;
+   border-radius: 8px;
+}
+#PhotoGallery1 .thumbnail img:hover
+{
+   transform: rotate(0deg) scale(1.03,1.03) ;
+   box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+   transition: transform 300ms linear 0ms, box-shadow 300ms linear 0ms;
+}
+#wb_LayoutGrid5
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGrid5
+{
+   box-sizing: border-box;
+   padding: 5px 15px 20px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGrid5 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid5 > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid5 > .row > .col-1
+{
+   float: left;
+}
+#LayoutGrid5 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   width: 100%;
+   text-align: left;
+}
+#LayoutGrid5:before,
+#LayoutGrid5:after,
+#LayoutGrid5 .row:before,
+#LayoutGrid5 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid5:after,
+#LayoutGrid5 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid5 > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_PhotoGallery1
+{
+   display: block;
+   width: 100%;
+   z-index: 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 1919px)
+{
+body
+{
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#wb_PhotoGallery1
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+}
+#PhotoGallery1 .thumbnails
+{
+   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+#wb_LayoutGrid5
+{
+   visibility: visible;
+   display: table;
+}
+#wb_LayoutGrid5
+{
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#LayoutGrid5
+{
+   height: auto;
+   padding: 20px 15px 20px 15px;
+}
+#LayoutGrid5 .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid5 > .row > .col-1
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#LayoutGrid5 > .row > .col-1
+{
+   display: block;
+   width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   text-align: center;
+}
+}
+@media only screen and (max-width: 767px)
+{
+body
+{
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#wb_PhotoGallery1
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+}
+#PhotoGallery1 .thumbnails
+{
+   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+#wb_LayoutGrid5
+{
+   visibility: visible;
+   display: table;
+}
+#wb_LayoutGrid5
+{
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+#LayoutGrid5
+{
+   height: auto;
+   padding: 20px 15px 20px 15px;
+}
+#LayoutGrid5 .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid5 > .row > .col-1
+{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+#LayoutGrid5 > .row > .col-1
+{
+   display: block;
+   width: 100%;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   text-align: center;
+}
+}
