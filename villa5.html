@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 21 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300&subset=latin&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wdth,wght@8..144,-10..0,25..151,100..1000&300&subset=latin,cyrillic,cyrillic-ext&display=swap" rel="stylesheet">
+<link href="New_3.css" rel="stylesheet">
+<link href="villa5.css" rel="stylesheet">
+<link rel="stylesheet" href="lightgallery/lg-transitions.css">
+<link rel="stylesheet" href="lightgallery/lightgallery.min.css">
+<script src="lightgallery/lightgallery.min.js"></script>
+<script src="lightgallery/lg-autoplay.min.js"></script>
+<script src="lightgallery/lg-fullscreen.min.js"></script>
+<script src="lightgallery/lg-rotate.min.js"></script>
+<script src="lightgallery/lg-share.min.js"></script>
+<script src="lightgallery/lg-thumbnail.min.js"></script>
+<script src="lightgallery/lg-video.min.js"></script>
+<script src="lightgallery/lg-zoom.min.js"></script>
+<script src="lightgallery/lightgallery.min_has_videofix!.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+lightGallery(document.getElementById("PhotoGallery1"), {mode: 'lg-slide', controls: true, download: false, escKey: true, licenseKey: 'LG-TEAM-608E66B1-8DE5-4365-9889-C48CB3CF8FC9', loop: true, plugins: [lgVideo, lgThumbnail], showCloseIcon: true, showMaximizeIcon: false, startAnimationDuration: 500, zoom: false, zoomFromOrigin: true, speed: 500, thumbnail: true, toggleThumb: false, thumbHeight: '100px', thumbMargin: 10, thumbWidth: 100, zoomFromOrigin: true, selector: 'a'});
+const galleryPhotoGallery1 = document.querySelector('#PhotoGallery1 .thumbnails');
+function layoutPhotoGallery1()
+{
+   const items = galleryPhotoGallery1.querySelectorAll('#PhotoGallery1 .thumbnails .thumbnail');
+   const cw = galleryPhotoGallery1.clientWidth;
+   const targetRowHeight = Math.max(100, Math.min(300, cw / 3));
+   items.forEach(item => 
+   {
+      const img = item.querySelector('img');
+      const apply = () => 
+      {
+         if (!img.naturalWidth || !img.naturalHeight) return;
+         const ratio = img.naturalWidth / img.naturalHeight;
+         const cs = getComputedStyle(img);
+         const vBorder = (parseFloat(cs.borderTopWidth) || 0) + (parseFloat(cs.borderBottomWidth) || 0);
+         const hBorder = (parseFloat(cs.borderLeftWidth) || 0) + (parseFloat(cs.borderRightWidth) || 0);
+         const figureWidth = Math.max(0, Math.round(ratio * (targetRowHeight - vBorder) + hBorder));
+         item.style.width = figureWidth + 'px';
+         item.style.flexGrow = ratio;
+      };
+      if (img.complete && img.naturalWidth) apply();
+      else img.addEventListener('load', apply, { once: true });
+   });
+}
+requestAnimationFrame(layoutPhotoGallery1);
+const roPhotoGallery1 = new ResizeObserver(layoutPhotoGallery1);
+roPhotoGallery1.observe(galleryPhotoGallery1);
+window.addEventListener('resize', layoutPhotoGallery1);
+});
+</script>
+</head>
+<body>
+<div id="wb_LayoutGrid1">
+<header id="LayoutGrid1">
+<div class="col-1">
+<div id="wb_Image1">
+<a href="./index.html"><img src="images/apm_letter_P.png" id="Image1" alt="" width="21" height="60"></a>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_FlexContainer1">
+<div id="FlexContainer1">
+<div id="wb_Text1">
+<h1><a href="./projects.html" class="Prospect_link">ПРОЕКТЫ</a></h1>
+</div>
+<div id="wb_Text2">
+<h1><a href="./firm.html" class="Prospect_link">МАСТЕРСКАЯ</a></h1>
+</div>
+<div id="wb_Text3">
+<h1><a href="./contacts.html" class="Prospect_link">КОНТАКТЫ</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="col-3">
+</div>
+</header>
+</div>
+<div id="FlexContainer2">
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image2">
+<img src="images/PROSPECT_Villa_CARD.jpg" id="Image2" alt="" width="1890" height="1261">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="col-1">
+<div id="wb_Text4">
+<h3>ВИЛЛА 5</h3>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="col-1">
+<div id="wb_Text5">
+<h4>ЖИЛОЙ ДОМ</h4>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5">
+<div class="col-1">
+<div id="wb_Text6">
+<h4>МЕСТО:</h4>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text10">
+<h4>Московская область</h4>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid7">
+<div id="LayoutGrid7">
+<div class="col-1">
+<div id="wb_Text11">
+<h4>ГОД:</h4>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text12">
+<h4>2009</h4>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid8">
+<div id="LayoutGrid8">
+<div class="col-1">
+<div id="wb_Text13">
+<h4>СТАТУС:</h4>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text14">
+<h4>Построен</h4>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid12">
+<div id="LayoutGrid12">
+<div class="col-1">
+<div id="wb_Text21">
+<h4>ПЛОЩАДЬ:</h4>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text22">
+<h4>500 м2</h4>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid9">
+<div id="LayoutGrid9">
+<div class="col-1">
+<div id="wb_Text15">
+<h4>ЭТАЖНОСТЬ:</h4>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text16">
+<h4>2</h4>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid10">
+<div id="LayoutGrid10">
+<div class="col-1">
+<div id="wb_Text17">
+<h4>КОМАНДА:</h4>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text18">
+<h4>И.Тарасов,&nbsp; Б.Тарасов</h4>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid6">
+<div id="LayoutGrid6">
+<div class="col-1">
+<div id="wb_PhotoGallery1">
+<div id="PhotoGallery1">
+<div class="thumbnails">
+<div class="thumbnail">
+<a href="images/PROSPECT_Villa-1.jpg" data-lg-size="1920-1094" data-sub-html="" data-rel="PhotoGallery1"><img alt="" id="PhotoGallery1_img0" src="images/tn_PROSPECT_Villa-1.jpg" class="image" width="629" height="358"></a>
+</div>
+<div class="thumbnail">
+<a href="images/PROSPECT_Villa-2.jpg" data-lg-size="1920-2895" data-sub-html="" data-rel="PhotoGallery1"><img alt="" id="PhotoGallery1_img1" src="images/tn_PROSPECT_Villa-2.jpg" class="image" width="629" height="948"></a>
+</div>
+<div class="thumbnail">
+<a href="images/PROSPECT_Villa-4.jpg" data-lg-size="1920-2582" data-sub-html="" data-rel="PhotoGallery1"><img alt="" id="PhotoGallery1_img2" src="images/tn_PROSPECT_Villa-4.jpg" class="image" width="629" height="846"></a>
+</div>
+<div class="thumbnail">
+<a href="images/PROSPECT_Villa-3.jpg" data-lg-size="1920-1444" data-sub-html="" data-rel="PhotoGallery1"><img alt="" id="PhotoGallery1_img3" src="images/tn_PROSPECT_Villa-3.jpg" class="image" width="629" height="473"></a>
+</div>
+<div class="thumbnail">
+<a href="images/PROSPECT_Villa-5.jpg" data-lg-size="1920-2849" data-sub-html="" data-rel="PhotoGallery1"><img alt="" id="PhotoGallery1_img4" src="images/tn_PROSPECT_Villa-5.jpg" class="image" width="629" height="933"></a>
+</div>
+<div class="thumbnail">
+<a href="images/PROSPECT_Villa-6.jpg" data-lg-size="1920-1688" data-sub-html="" data-rel="PhotoGallery1"><img alt="" id="PhotoGallery1_img5" src="images/tn_PROSPECT_Villa-6.jpg" class="image" width="629" height="553"></a>
+</div>
+<div class="thumbnail">
+<a href="images/PROSPECT_Villa-8.jpg" data-lg-size="1920-1279" data-sub-html="" data-rel="PhotoGallery1"><img alt="" id="PhotoGallery1_img6" src="images/tn_PROSPECT_Villa-8.jpg" class="image" width="629" height="419"></a>
+</div>
+<div class="thumbnail">
+<a href="images/PROSPECT_Villa-7.jpg" data-lg-size="1920-1100" data-sub-html="" data-rel="PhotoGallery1"><img alt="" id="PhotoGallery1_img7" src="images/tn_PROSPECT_Villa-7.jpg" class="image" width="629" height="360"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_FlexContainer3">
+<div id="FlexContainer3">
+<div id="wb_Text7">
+<h2>ООО &quot;АПМ&quot;ПРОСПЕКТ&quot;</h2>
+</div>
+<div id="wb_Text8">
+<h2><a href="tel:+78314658925" class="Prospect_link">+7 (831) 465-89-25</a><br><a href="mailto:PROSPEKT2A@YANDEX.RU" class="Prospect_link">PROSPEKT2A@YANDEX.RU</a></h2>
+</div>
+<div id="wb_Text9">
+<h2>603057, НИЖНИЙ НОВГОРОД,<br>УЛ. БЕКЕТОВА, 3Б, ОФИС 455</h2>
+</div>
+</div>
+</div>
+</body>
+</html>
